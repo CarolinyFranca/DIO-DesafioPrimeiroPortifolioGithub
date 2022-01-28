@@ -1,0 +1,46 @@
+// Animal -- concreta
+
+public void mover(String mover){
+    System.out.println("O método de locomoção é: "+mover);
+}
+
+// Cachorro  -- concreta
+  @Override
+    public void mover(String mover){
+        System.out.println("O cahorro "+mover);
+    }  
+    
+    public void latir(){
+        System.out.println("auau");
+    }
+
+
+// Coelho   -- concreta
+@Override
+public void mover(String mover){ 
+  System.out.println("O coelho "+mover);
+}
+
+// Main
+  Animal cachorro = new Cachorro();
+  cachorro.mover("Anda");
+      
+  Animal coelho = new Coelho();
+  coelho.mover("pula");
+
+
+======================== Classes Abstratas  ==========================
+
+
+
+
+
+
+
+
+
+
+
+
+
+

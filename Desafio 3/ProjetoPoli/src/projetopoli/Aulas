@@ -1,0 +1,87 @@
+// Animal -- concreta
+
+public void mover(String mover){
+    System.out.println("O método de locomoção é: "+mover);
+}
+
+// Cachorro  -- concreta
+  @Override
+    public void mover(String mover){
+        System.out.println("O cahorro "+mover);
+    }  
+    
+    public void latir(){
+        System.out.println("auau");
+    }
+
+
+// Coelho   -- concreta
+@Override
+public void mover(String mover){ 
+  System.out.println("O coelho "+mover);
+}
+
+// Main
+  Animal cachorro = new Cachorro();
+  cachorro.mover("Anda");
+      
+  Animal coelho = new Coelho();
+  coelho.mover("pula");
+
+
+======================== Classes Abstratas  ==========================
+// Animal 
+// Atributos
+   String patas;
+
+// criando métodos abstratos
+public abstract void comer();
+
+
+// criando método concreto
+public void falar(String fala){
+    System.out.println("O animal: "+fala);
+}
+
+
+// Cachorro
+// implementação do método abstrato
+   @Override
+   public void comer(){
+       System.out.println("O cachorro come ração");
+   }
+
+   // sobreesrita do método concreto
+   @Override
+   public void falar(String fala){
+       System.out.println("O cachorro "+fala);
+   }
+
+
+// Coelho
+@Override
+public void comer(){
+    System.out.println("O coelho come cenoura");
+}
+
+// Main
+
+Animal cachorro = new Cachorro();
+Animal coelho = new Coelho();
+       
+cachorro.comer();  // foi implementado na subclasse concreta
+cachorro.falar("late"); // foi sobreescrito na subclasse
+
+coelho.comer(); // foi implementado na subclasse concreta
+coelho.falar("não fala"); // veio da superclasse abstrata
+       
+
+
+
+
+
+
+
+
+
+
