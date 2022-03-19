@@ -1,0 +1,68 @@
+body{
+    margin: auto;
+}
+.cabeçalho{
+    position: absolute;
+    background-image: url('images/capa.jpg');
+    width: 1366px;
+    height: 635px;
+}
+.conteúdo{
+    position: relative;
+}
+.conteúdo img{
+    position: relative;
+    width: 170px;
+    height: 120px;
+    bottom: 10px;
+    left: 20px;
+}
+.botão{
+    position: relative;
+    left: 1030px;
+    color: White;
+    background-color: red;
+    width: 100px;
+    height: 40px;
+    bottom: 70px;
+    font-family: 'Arial';
+    border-radius: 10px;
+    cursor: pointer;
+}
+.conteúdo h1{
+    position: relative;
+    color: White;
+    font-family: 'Arial';
+    font-size: 50px;
+}
+.texts{
+    position: relative;
+    line-height: 30px;
+    top: 20px;
+    color: White;
+    font-size: 18px;
+    font-family: 'Arial';
+    text-align: center;
+}
+.conteúdo input{
+    width: 500px;
+    height: 60px;
+    margin-right: 190px;
+    color: black;
+    text-align: left;
+    font-family: 'Arial';
+    font-size: 18px;
+}
+.botão2{
+    position: relative;
+    width: 160px;
+    height: 60px;
+    margin-left: 837px;
+    bottom: 40px;
+    background-color: red;
+    color: white;
+    font-family: 'Arial';
+    border-style: none;
+    font-size: 22px;
+    cursor: pointer;
+}
